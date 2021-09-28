@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    margin:20px 20px;
+  
+    font-family : 'Raleway', sans-serif ;
+}
+header nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    
+  color:#000000;
+    text-decoration:none;
+    margin-right:50px; 
+ 
+}
+header nav a:hover{
+    color:#0065fc;
+    border-bottom : 1px solid #0065fc;
+}
+header nav img{
+   height: 40px;
+    width:100%;
+}
+header section #location{ 
+    margin-top: 20px;
+  
+    display: flex;
+   
+ 
+   
+}
+header section #location .box{
+  
+   display:flex;
+  flex-wrap: wrap;
+   align-items: center;
+   height:40px;
+}
+header section #location .box i{
+    
+   
+    display:flex; 
+    width:40px;
+    height:40px;
+    padding-left: 14px;
+    padding-top: 12px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 5px 0 0 5px;
+  
+}
+header section #location .box .champ{
+    border-left-style: none;
+    border-right-style:none;
+    border-top-width: 1px;
+    border-bottom-width:1px;
+    border-color:rgb(133, 151, 160);
+    height:40px; 
+    font-weight: bold;
+}
+
+header section #location .box button{
+    height:40px;
+    border:1px solid #0065fc;
+    border-radius : 0 5px 5px 0;
+    background-color: #0065fc;
+    font-weight: bold;
+    color:white;
+
+}
+header section #filtre p{
+    font-weight: bold;
+}
+header section #filtre{
+    margin-top: 20px;
+    display:flex;
+  
+     
+}
+header section #filtre .case button{
+    display:flex;
+    width:160px;
+    justify-content: space-between;
+    align-items: center;
+    height:40px;
+    border-radius:20px;
+    margin-right: 10px;
+}
+header section #filtre .case button .icone{
+  
+    border-radius:50%;
+   background-color:#DEEBFF ;
+   color:#0065fc;
+    font-size: 16px;
+    padding:10px;
+    width: 30%;
+    position:absolute;
+    left:0;
+    
+   
+}
+header section #filtre .case{
+    display:flex;
+   position:relative;
+}
+
+
+
+

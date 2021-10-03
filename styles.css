@@ -1,135 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
-header nav a{
-    color:black;
-    text-decoration:none; 
-    border-top:2px solid transparent;
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
 }
-header nav a:hover{
-    border-top:2px solid #0065fc;
+nav img {
+  padding: 0 10px;
 }
-header nav{
-   
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
+.inscription {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #0065fc;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
 }
-header nav #logo{
-    margin-right:auto;
-    padding:0 20px 0 20px; 
+.inscription:hover {
+  border-bottom: 3px solid #0065fc;
 }
-header nav a{
-    padding:2em;
+#onglets {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
 }
-header nav .inscription {
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
+#onglets .sousmenu {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  text-decoration: none;
+  color: black;
 }
-header nav .sousmenu{
-   
-    display: flex;
+.sousmenu {
+  display: block;
+  padding: 2em;
+  border-bottom: 3px solid lightgrey;
 }
+.sousmenu:hover {
+  border-bottom: 3px solid #0065fc;
+}
+/*nav fini*/
 
-@media (max-width:800px){
-header nav .sousmenu{
-    order:1;
-    flex-basis:100%;
+.presentation {
+  padding: 1em;
 }
-header nav .sousmenu a{
-    text-align:center;
-  border-bottom: 2px solid grey;
-    flex-basis: 50%;
+.presentation p {
+  padding: 1em 1em 1em 0;
 }
-header nav a:hover{
-    border-bottom: 2px solid #0065fc;
-    border-top-color:transparent;
+.rechercher {
+  display: flex;
+  justify-content: center;
 }
+.location {
+  padding: 1.2em;
+  background-color: lightgrey;
+  border-radius: 1em 0 0 1em;
 }
-
-
-
-
-
-
-
-
-header section #location .box{
-  
-   display:flex;
-  flex-wrap: wrap;
-   align-items: center;
-   height:40px;
+.rechercher input {
+  border: 1px solid lightgrey;
+  font-weight: bold;
+  padding-left: 1em;
 }
-header section #location .box i{
-    
-   
-    display:flex; 
-    width:40px;
-    height:40px;
-    padding-left: 14px;
-    padding-top: 12px;
-    background-color: rgb(165, 165, 165);
-    border-radius: 5px 0 0 5px;
-  
+.rechercher button {
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: #0065fc;
+  color: white;
+  border: 1px solid transparent;
 }
-header section #location .box .champ{
-    border-left-style: none;
-    border-right-style:none;
-    border-top-width: 1px;
-    border-bottom-width:1px;
-    border-color:rgb(133, 151, 160);
-    height:40px; 
-    font-weight: bold;
-}
-
-header section #location .box button{
-    height:40px;
-    border:1px solid #0065fc;
-    border-radius : 0 5px 5px 0;
-    background-color: #0065fc;
-    font-weight: bold;
-    color:white;
-
-}
-header section #filtre p{
-    font-weight: bold;
-}
-header section #filtre{
-    margin-top: 20px;
-    display:flex;
-  
-     
-}
-header section #filtre .case button{
-    display:flex;
-    width:160px;
-    justify-content: space-between;
-    align-items: center;
-    height:40px;
-    border-radius:20px;
-    margin-right: 10px;
-}
-header section #filtre .case button .icone{
-  
-    border-radius:50%;
-   background-color:#DEEBFF ;
-   color:#0065fc;
-    font-size: 16px;
-    padding:10px;
-    width: 30%;
-    position:absolute;
-    left:0;
-    
-   
-}
-header section #filtre .case{
-    display:flex;
-   position:relative;
-}
-
-
-

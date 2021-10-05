@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+nav img {
+  padding: 0 10px;
+}
+.inscription {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #0065fc;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+.inscription:hover {
+  border-bottom: 3px solid #0065fc;
+}
+#onglets {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+#onglets .sousmenu {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  text-decoration: none;
+  color: black;
+}
+.sousmenu {
+  display: block;
+  padding: 2em;
+  border-bottom: 3px solid lightgrey;
+}
+.sousmenu:hover {
+  border-bottom: 3px solid #0065fc;
+}
+/*nav fini*/
+
+.presentation {
+  padding: 1em;
+}
+.presentation p {
+  padding: 1em 1em 1em 3px;
+}
+.rechercher {
+  display: flex;
+  justify-content: center;
+}
+.location {
+  padding: 1.2em;
+  background-color: lightgrey;
+  border-radius: 1em 0 0 1em;
+}
+.rechercher input {
+  border: 1px solid lightgrey;
+  font-weight: bold;
+  padding-left: 1em;
+}
+.rechercher button {
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: #0065fc;
+  color: white;
+  border: 1px solid transparent;
+  margin-left: -10px;
+}
+.rechercher button:hover {
+  transform: scale(1.05);
+  background-color: #0065fc;
+}
+
+/*fitres*/
+
+.options {
+  margin: 1em;
+}
+.options h1 {
+  margin-left: 3px;
+}
+.filtres {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+  border: 2px solid lightgrey;
+  border-radius: 20px;
+}
+.fas.fa-money-bill-wave {
+  background-color: #deebff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #0065fc;
+  margin: -3px;
+}
+.fas.fa-child {
+  background-color: #deebff;
+  padding: 12px;
+  border-radius: 50%;
+  color: #0065fc;
+  margin: -3px;
+}
+.fas.fa-heart {
+  background-color: #deebff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #0065fc;
+  margin: -3px;
+}
+.fas.fa-dog {
+  background-color: #deebff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #0065fc;
+  margin: -3px;
+}
+.options span {
+  font-weight: bold;
+  padding-left: 20px;
+}
+.options span:hover {
+  text-decoration: bold;
+}
+.filtres:hover {
+  background-color: rgb(241, 239, 239);
+  transform: scale(1.02);
+}
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1em;
+}
+.fas.fa-info {
+  border: 1px solid lightgrey;
+  padding:10px;
+  border-radius: 50%;
+  color: #0065fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

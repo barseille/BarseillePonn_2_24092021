@@ -16,8 +16,14 @@ header {
 header img {
   padding: 0 10px;
 }
-/*----------------------------------------------navigation class inscription------------------------------------*/
-.inscription {
+/*------------------------------responsive--------------------------------*/
+@media (min-width: 1024px) {
+  header img {
+    padding: 0 16px;
+  }
+}
+/*----------------------------------------------menu2------------------------------------*/
+.menu2 {
   padding: 0 10px;
   font-weight: bold;
   color: #0065fc;
@@ -25,17 +31,17 @@ header img {
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 }
-.inscription:hover {
+.menu2:hover {
   border-bottom: 3px solid #0065fc;
   cursor: pointer;
 }
-/*------------------------------------------naviguation  id onglet----------------------------------------------*/
-nav {
+/*------------------------------------------menu1  ----------------------------------------------*/
+.menu1 {
   display: flex;
   justify-content: space-around;
   flex-basis: 100%;
 }
-nav .sousmenu {
+.menu1 .sousmenu {
   display: flex;
   justify-content: center;
   flex-basis: 50%;
@@ -52,7 +58,7 @@ nav .sousmenu {
   border-bottom: 3px solid #0065fc;
   cursor: pointer;
 }
-/*------------------------------------ header responsive------------------------------------------------------------------------*/
+/*------------------------------------ header responsive------------------------------------------*/
 @media (min-width: 768px) {
   header {
     display: flex;
@@ -64,15 +70,15 @@ nav .sousmenu {
     left: 0;
     order: -2;
   }
-  nav {
+  .menu1 {
     flex-basis: auto;
     order: -1;
   }
-  .inscription {
+  .menu2 {
     display: flex;
     padding: 2em;
   }
-  .inscription:hover {
+  .menu2:hover {
     border-bottom: 3px solid transparent;
     border-top: 3px solid #0065fc;
   }
@@ -85,11 +91,9 @@ nav .sousmenu {
   }
 }
 
-/*=================================================section=============================================================*/
-.section {
-  padding: 2em;
-}
-/*--------------------------------------------------presentation-----------------------------------------------------*/
+/*=================================================nav=============================================================*/
+
+/*------------------------------------presentation---------------------------------*/
 .presentation {
   display: flex;
   flex-direction: column;
@@ -101,8 +105,8 @@ nav .sousmenu {
   padding-top: 1em;
 }
 
-/*-------------------------------------------------rechercher---------------------------------------------*/
-.rechercher {
+/*---------------------------------rechercher---------------------------------------------*/
+.recherche {
   display: flex;
   justify-content: center;
 }
@@ -111,13 +115,13 @@ nav .sousmenu {
   background-color: lightgrey;
   border-radius: 1em 0 0 1em;
 }
-.rechercher input {
+.recherche input {
   border: 1px solid lightgrey;
   font-weight: bold;
   padding-left: 1em;
   width: 260px;
 }
-.rechercher button {
+.recherche button {
   padding: 1.5em;
   border-radius: 1em;
   background-color: #0065fc;
@@ -125,37 +129,38 @@ nav .sousmenu {
   border: 1px solid transparent;
   margin-left: -10px;
 }
-.rechercher button:hover {
+.recherche button:hover {
   transform: scale(1.05);
   background-color: #0065fc;
   cursor: pointer;
 }
-.rechercher .search {
+.recherche .search {
   display: none;
 }
-/*----------------------- section responsive---------------------------------------------------------------------*/
+
+/*-----------------------responsive-------------------------------------------*/
 @media (min-width: 768px) {
   .presentation {
     align-items: flex-start;
   }
-  .rechercher {
+  .recherche {
     justify-content: flex-start;
     padding-left: 1em;
   }
-  .rechercher input {
+  .recherche input {
     width: 300px;
   }
-  .rechercher .search {
+  .recherche .search {
     display: initial;
   }
   .fas.fa-search {
     display: none;
   }
-  .rechercher button {
+  .recherche button {
     border-radius: 0px 10px 10px 0px;
     margin: 0px;
   }
-  .rechercher button:hover {
+  .recherche button:hover {
     opacity: 0.8;
   }
 }
@@ -171,6 +176,7 @@ nav .sousmenu {
 }
 .options h1 {
   display: flex;
+  justify-content: center;
 }
 
 .options span {
@@ -183,6 +189,7 @@ nav .sousmenu {
 .listefiltres {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .filtres {
@@ -191,7 +198,7 @@ nav .sousmenu {
   margin: 1em 0 0 0;
   border: 2px solid lightgrey;
   border-radius: 20px;
-  width: 210px;
+  width: 200px;
   height: 45px;
 }
 .filtres:hover {
@@ -207,11 +214,14 @@ nav .sousmenu {
   margin: -3px;
 }
 
-.information {
+.info {
   display: flex;
   align-items: center;
   margin-top: 2em;
   padding: 10px;
+}
+.info p {
+  padding-left: 15px;
 }
 .fas.fa-info {
   border: 1px solid lightgrey;
@@ -236,6 +246,9 @@ nav .sousmenu {
     display: flex;
     flex-direction: row;
   }
+  .liste {
+    margin-right: 50px;
+  }
   .options h1 {
     display: flex;
     align-items: center;
@@ -243,28 +256,35 @@ nav .sousmenu {
   .filtres {
     padding: 3px 0;
     border-radius: 40px;
-    margin-left: 1em;
   }
   .filtres .fas {
     padding: 16px;
   }
-  @media (min-width: 1024px) {
-    .filtre1 {
-      display: flex;
-    }
-    .filtre2 {
-      display: flex;
-    }
+}
+@media (min-width: 1024px) {
+  .liste {
+    display: flex;
+    margin-right: 0;
+  }
+  .sousoptions {
+    flex-wrap: nowrap;
+  }
+  .sousoptions h1 {
+    margin-top: 15px;
+  }
+  .filtres {
+    margin-left: 10px;
   }
 }
-/*========================================================================section2================================================================*/
+
+/*======================================================section1===========================================*/
 
 /*-----------------------------------------------------------------id populaires-------------------*/
 #populaires {
   background-color: #f2f2f2;
   gap: 1em;
 }
-.populairesicone {
+.populairestitre {
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -321,7 +341,7 @@ nav .sousmenu {
   color: lightgrey;
 }
 
-/*------------------------------------------------------id hebergements------------------------------------------------------------------------*/
+/*-------------------------------hebergements------------------------------------------------*/
 
 #hebergements {
   background-color: #f2f2f2;
@@ -357,12 +377,7 @@ nav .sousmenu {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.hebergementsphotostexte {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-}
+
 #hebergements a {
   margin-top: 1em;
   text-decoration: none;
@@ -377,9 +392,20 @@ nav .sousmenu {
   color: #0065fc;
 }
 
-/*-------------------------------section2 responsive--------------------------*/
+/*-------------------------------section1 responsive--------------------------*/
+@media (min-width: 768px) {
+  #populaires {
+    margin-top: 2em;
+    width: 100%;
+    margin: auto;
+  }
+
+  .hebergementsbloc {
+    width: 100%;
+  }
+}
 @media (min-width: 1024px) {
-  .section2 {
+  .section1 {
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
@@ -400,6 +426,7 @@ nav .sousmenu {
   }
   .hebergementsphotos img {
     height: 125px;
+    width: 100%;
   }
   #hebergements h3 {
     padding: 1em 2em;
@@ -413,35 +440,15 @@ nav .sousmenu {
     border-radius: 20px;
     flex-basis: 30%;
   }
-  .populairesicone {
+  .populairestitre {
     padding: 1em 2em;
   }
   .populairesphotos {
     width: 250px;
   }
-  .activitesbloc {
-    width: 400px;
-  }
-  .activitesblocimg {
-    width: 230px;
-  }
 }
-@media (min-width: 768px) {
-  #populaires {
-    margin-top: 2em;
-    width: 100%;
-    margin: auto;
-  }
-  .hebergementsphotos img {
-  }
 
-  .hebergementsbloc {
-    width: 100%;
-  }
-}
-/*--------------------------------------section2 responsive fin------------------------*/
-
-/*========================================================activités=================================================================================*/
+/*========================================================section2=================================================================================*/
 
 .activitesbloc {
   display: flex;
@@ -450,12 +457,12 @@ nav .sousmenu {
 
   background-color: #f2f2f2;
 }
-#activites h3 {
+#section2 h3 {
   display: flex;
   padding: 1em;
   background-color: #f2f2f2;
 }
-/*-------------------------------------------------------activitesphotos1-------------------------------------------------------------------------------*/
+/*----------------------------------------activitesphotos1-----------------------------------------------------*/
 .activitesphotos1 {
   border-radius: 20px;
   display: flex;
@@ -480,14 +487,14 @@ nav .sousmenu {
   transform: scale(1.04);
 }
 
-/*---------------------------------------------------------------activitesphotos2-------------------------------------------------------------------------*/
+/*---------------------------------activitesphotos2------------------------------------------------*/
 
 .activitesphotos2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.activitesblocimg {
+.activitesdescription {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -497,21 +504,21 @@ nav .sousmenu {
   background-color: white;
   box-shadow: 0px 10px 10px lightgrey;
 }
-.activitesblocimg img {
+.activitesdescription img {
   width: 100%;
   height: 150px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.activitesblocimg h4 {
+.activitesdescription h4 {
   padding: 1em;
   font-size: 15px;
 }
-.activitessousmenu .activitesblocimg:hover {
+.activitessousmenu .activitesdescription:hover {
   transform: scale(1.04);
 }
 
-/*---------------------------------------------------------#activités responsive-------------------------------------------------------------------*/
+/*-------------------------------section2 responsive------------------------------------------------*/
 
 @media (min-width: 768px) {
   #activites {
@@ -521,7 +528,7 @@ nav .sousmenu {
     flex-direction: column;
     margin: auto;
   }
-  #activites h3 {
+  #section2 h3 {
     background-color: white;
     padding: 2em 0 0 2em;
   }
@@ -533,6 +540,7 @@ nav .sousmenu {
   .activitesbloc {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     flex-basis: 50%;
     background-color: white;
@@ -552,26 +560,36 @@ nav .sousmenu {
     margin-left: 1em;
   }
   .activitesphotos2 img {
-    height: 210px;
+    height: 212px;
   }
-  @media (min-width: 1024px) {
-    #activites {
-      padding: 1em;
-    }
 
-    .activitesblocimg {
-      width: 220px;
-    }
-    .activitesphotos1 {
-      min-width: 200px;
-    }
-    .activitesblocimg {
-      min-width: 200px;
-    }
+  .activitesdescription {
+    width: 230px;
+  }
+}
+@media (min-width: 1024px) {
+  #activites {
+    padding: 1em;
+  }
+  .activitesbloc {
+    padding: 20px;
+  }
+
+  .activitesdescription {
+    width: 220px;
+  }
+  .activitesphotos1 {
+    min-width: 200px;
+  }
+  .activitesdescription {
+    min-width: 200px;
+  }
+  .activitesphotos1 h4 {
+    font-size: 14px;
   }
 }
 
-/*----------------------------------------------------------------footer----------------------------------------------------------------------------*/
+/*=================================================footer==================================================================*/
 
 footer {
   width: 100%;

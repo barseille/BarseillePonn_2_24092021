@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="uft=8" />
+    <meta charset="UFT=8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/051e9bb83a.js"
@@ -12,85 +12,82 @@
     <title>Reservia</title>
   </head>
   <body>
-    <div id="reservia">
     <!--===========================================header=================================================================-->
     <header>
-      
-        <img src="images/Reservia.svg" alt="reservialogo" />
-        <div><a class="inscription" href="#">S'inscrire</a></div>
-    
+      <img src="images/Reservia.svg" alt="reservialogo" />
+      <div><a class="menu2" href="#">S'inscrire</a></div>
 
-      <nav>
+      <div class="menu1">
         <a class="sousmenu" href="#hebergements">Hébergement</a>
         <a class="sousmenu" href="#activites">Activités</a>
-    </nav>
+      </div>
     </header>
 
-    <!--===========================================section1=============================================================-->
-    <section>
+    <!--===========================================nav=============================================================-->
+    <nav>
       <div class="presentation">
         <h1>Trouvez des hébergements pour des vacances de rêve</h1>
         <p>En plein centre ville ou en plein nature</p>
       </div>
 
-      <div class="rechercher">
+      <div class="recherche">
         <div class="location">
           <i class="fas fa-map-marker-alt"></i>
         </div>
         <input type="text" name="location" placeholder="Marseille,France" />
-        <button><i class="fas fa-search"></i><span class="search">Rechercher</span></button>
+        <button>
+          <i class="fas fa-search"></i><span class="search">Rechercher</span>
+        </button>
       </div>
 
       <div class="options">
-
         <div class="sousoptions">
-        <h1>Filtres</h1>
+          <h1>Filtres</h1>
 
-<div class="listefiltres">
+          <div class="listefiltres">
+            <div class="liste">
+              <div class="filtres">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Économique</span>
+              </div>
 
-  <div class="filtre1">
-        <div class="filtres">
-          <i class="fas fa-money-bill-wave"></i>
-          <span>Économique</span>
+              <div class="filtres">
+                <i class="fas fa-child"></i>
+                <span>Familial</span>
+              </div>
+            </div>
+            <!---liste fin-->
+
+            <div class="liste">
+              <div class="filtres">
+                <i class="fas fa-heart"></i>
+                <span>Romantique</span>
+              </div>
+
+              <div class="filtres">
+                <i class="fas fa-dog"></i>
+                <span>Animaux autorisés</span>
+              </div>
+            </div>
+            <!--liste fin-->
+          </div>
+          <!--listefiltres fin--->
         </div>
+        <!--sousoptions fin-->
 
-        <div class="filtres">
-          <i class="fas fa-child"></i>
-          <span>Familial</span>
-        </div>
-</div><!---class filtre1 fin-->
-
-<div class="filtre2">
-        <div class="filtres">
-          <i class="fas fa-heart"></i>
-          <span>Romantique</span>
-        </div>
-
-        <div class="filtres">
-          <i class="fas fa-dog"></i>
-          <span>Animaux autorisés</span>
-        </div>
-        </div><!--class filtre2 fin-->
-
-       </div><!---------------------listefiltres------------------------------------------>
-       
-</div><!---------------------class alloptions fin------------------------------->
-
-
-
-        <div class="information">
+        <div class="info">
           <i class="fas fa-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
-      <!---------------------------class options fin---------------------------->
-    </section>
+      <!--options fin-->
+    </nav>
 
-    <!--===============================================section2==============================================================-->
-    <div class="section2">
-      <!-----------------------------------debut bloc #populaires--------------------------------------------------->
+    <!--===============================================section1==============================================================-->
+    <div class="section1">
+      <!--=========================#populaires==============================-->
       <div id="populaires">
-        <div class="populairesicone">
+        <div class="populairestitre">
           <h3>Les plus populaires</h3>
           <i class="fas fa-chart-line"></i>
         </div>
@@ -156,10 +153,9 @@
         </div>
         <!--populairesbloc fin-->
       </div>
-      <!--id polpulaires fin-->
-      <!-------------------------------------fin bloc populaires------------------------------------------------------>
+      <!--id populaires fin-->
 
-      <!--------------------------------------------------bloc #hebergements-------------------------------------------------->
+      <!--=================================#hebergements========================================-->
       <div id="hebergements">
         <h3>hébergements à Marseille</h3>
 
@@ -278,94 +274,83 @@
 
         <a href="#">Afficher plus</a>
       </div>
-      <!--id hebergements fin-->
-      <!-----------------------------------------------fin bloc hebergements---------------------------------------------------->
+      <!--hebergements fin-->
     </div>
-    <!--section2 fin-->
-    <!--=================================================section2 fini==================================================-->
+    <!--section1 fin-->
 
-    <!--==================================================#activites========================================================-->
+    <!--==================================================#section2========================================================-->
 
-    <div id="activites">
-      <!-----------------------------------------------id activites-------------------------------------------------------->
+    <div id="section2">
       <h3>Activités à Marseille</h3>
 
-<div class="activitessousmenu">
-
-      <div class="activitesbloc">
-        <!--------------class activitesbloc-------------------------------------------------------------------->
-
-        <div class="activitesphotos1">
-          <!---------------------------------------activitesphotos1---------------------------------->
-          <img
-            src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-            alt="activites"
-          />
-          <h4>Vieux Port</h4>
-        </div>
-
-        <div class="activitesphotos2">
-          <!--------------------------activitesphotos2----------------------------------------------->
-
-          <div class="activitesblocimg">
+      <div class="activitessousmenu">
+        <div class="activitesbloc">
+          <div class="activitesphotos1">
             <img
-              src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="activites"
             />
-            <h4>Fort de Pomègues</h4>
+            <h4>Vieux Port</h4>
           </div>
 
-          <div class="activitesblocimg">
+          <div class="activitesphotos2">
+            <div class="activitesdescription">
+              <img
+                src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="activites"
+              />
+              <h4>Fort de Pomègues</h4>
+            </div>
+
+            <div class="activitesdescription">
+              <img
+                src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="activites"
+              />
+              <h4>île de Frioul</h4>
+            </div>
+          </div>
+          <!--activitesphotos2 fin-->
+        </div>
+        <!--class activitébloc fin-->
+
+        <div class="activitesbloc">
+          <!--================================activitesbloc==========================================---->
+
+          <div class="activitesphotos1">
             <img
-              src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+              src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="activites"
             />
-            <h4>île de Frioul</h4>
+            <h4>Parc National des Calanques</h4>
           </div>
+
+          <div class="activitesphotos2">
+            <div class="activitesdescription">
+              <img
+                src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="activites"
+              />
+              <h4>Notre-Dame-de-la-Garde</h4>
+            </div>
+
+            <div class="activitesdescription">
+              <img
+                src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="activites"
+              />
+              <h4>Parc Longchamp</h4>
+            </div>
+          </div>
+          <!--activitesphotos2-->
         </div>
-        <!--activitesphotos2 fin-->
+        <!--fin class activitesbloc-->
       </div>
-      <!--class activitébloc fin-->
-
-      <div class="activitesbloc">
-        <!--------------class activitesbloc--------------------------------------------------------------------->
-
-        <div class="activitesphotos1">
-          <!------------------------------activitesphotos1-------------------------------------------------->
-          <img
-            src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-            alt="activites"
-          />
-          <h4>Parc National des Calanques</h4>
-        </div>
-
-        <div class="activitesphotos2">
-          <!-------------------------activitesphotos2---------------------------------------------------------->
-
-          <div class="activitesblocimg">
-            <img
-              src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="activites"
-            />
-            <h4>Notre-Dame-de-la-Garde</h4>
-          </div>
-
-          <div class="activitesblocimg">
-            <img
-              src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              alt="activites"
-            />
-            <h4>Parc Longchamp</h4>
-          </div>
-        </div>
-        <!--activitesphotos2-->
-      </div>
-      <!------------------------------- fin class activitesbloc------------------------->
-      </div><!---------------------------fin class activites sous menu---------------------------------->
+      <!--fin class activites sous menu-->
     </div>
-    <!-----------------------------------------------------fin id activites------------------------------------------------->
+    <!--fin section2-->
 
-    <!-----------------------------footer------------------------------------------------------------------------------------------>
+    <!--====================================================footer=================================================-->
     <footer>
       <div class="pieddepage">
         <h3>À propos</h3>
@@ -386,6 +371,5 @@
         <a href="#">Nous contacter</a>
       </div>
     </footer>
-    </div><!-------------------------id reservia fin-------------------->
   </body>
 </html>

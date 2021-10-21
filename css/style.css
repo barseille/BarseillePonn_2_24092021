@@ -547,9 +547,7 @@ header img {
   }
   .activitesphotos1 {
     flex-basis: 50%;
-
     min-width: 250px;
-    padding: 1em O;
   }
 
   .activitesphotos1 img {

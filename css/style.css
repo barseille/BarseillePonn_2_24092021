@@ -9,10 +9,9 @@
 .entete {
   display: flex;
   justify-content: space-between;
-  height: 100px;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2em;
+ 
 }
 .logo {
   margin-left: 20px;
@@ -49,12 +48,11 @@
   flex-basis: 50%;
   text-decoration: none;
   color: black;
-}
-.sousmenu {
   display: block;
-  padding: 2em;
+ text-align:center;
   border-bottom: 3px solid lightgrey;
   border-top: 3px solid transparent;
+  padding:13px 0;
 }
 .sousmenu:hover {
   border-bottom: 3px solid #0065fc;
@@ -78,7 +76,7 @@
   }
   .inscription {
     display: flex;
-    padding: 2em;
+    padding: 2rem;
   }
   .inscription:hover {
     border-bottom: 3px solid transparent;
@@ -95,27 +93,28 @@
 
 /*=================================================main=============================================================*/
 .main {
-  padding: 1em;
+  padding: 1rem;
 }
 /*------------------------------------presentation---------------------------------*/
 .presentation {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 .presentation-p {
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 .presentation-h1 {
-  font-weight: 800;
-  margin-top: 1em;
+  font-weight:bold;
+  font-size:22px;
+  margin-top: 1rem;
 }
 
 /*---------------------------------rechercher---------------------------------------------*/
 form.location {
   display: flex;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .fas.fa-map-marker-alt {
   font-size: 20px;
@@ -133,7 +132,7 @@ form.location {
 }
 .bouton {
   padding: 17px;
-  border-radius: 1em;
+  border-radius: 1rem;
   background-color: #0065fc;
   color: white;
   border: 1px solid transparent;
@@ -177,20 +176,22 @@ form.location {
 /*------------------------------------------------------options---------------------------------------------------------------*/
 
 .options {
-  margin: 2em 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
 
   flex-wrap: wrap;
 }
 .options-h1 {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
+  font-weight:bold;
 }
 
 .filtres-menu {
   font-weight: bold;
   padding: 20px;
+  font-size:18px;
 }
 .filtres-menu:hover {
   text-decoration: bold;
@@ -225,7 +226,7 @@ form.location {
 .info {
   display: flex;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 .info p {
   padding-left: 15px;
@@ -245,7 +246,7 @@ form.location {
   .sousoptions {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1rem;
   }
   .listefiltres {
     display: flex;
@@ -283,17 +284,21 @@ form.location {
 /*======================================================section1===========================================*/
 
 /*-----------------------------------------------------------------populaires-------------------*/
-#populaires {
+.populaires {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
 
-  padding: 1em;
+  padding: 1rem;
 }
 .populaires-titre {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.populaires-titre p{
+  font-size:22px;
+  font-weight:bold;
 }
 
 .fas.fa-chart-line {
@@ -309,7 +314,7 @@ form.location {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 2rem;
   background-color: white;
   box-shadow: 0px 10px 10px lightgrey;
 }
@@ -331,11 +336,17 @@ form.location {
   max-height: 150px;
   position: relative;
 }
+.description h3{
+  font-size:16px;
+  font-weight:bold;
+}
 .description p {
   margin-top: 5px;
+  font-size:14px;
+  font-weight:normal;
 }
 .etoile {
-  padding-top: 1em;
+  padding-top: 1rem;
   position: absolute;
   bottom: 0;
 }
@@ -347,12 +358,12 @@ form.location {
 }
 /*--------------------------------responsive----------------------*/
 @media (min-width: 768px) {
-  #populaires {
+  .populaires {
     width: 100%;
   }
 }
 @media (min-width: 1024px) {
-  #populaires {
+  .populaires {
     order: 1;
     border-radius: 20px;
     flex-basis: 30%;
@@ -368,9 +379,9 @@ form.location {
 }
 /*-------------------------------hebergements------------------------------------------------*/
 
-#hebergements {
+.hebergements {
   background-color: white;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .hebergements-bloc {
@@ -379,7 +390,7 @@ form.location {
   flex-wrap: wrap;
   align-items: center;
   border-radius: 15px;
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 .hebergements-photos {
   border: 5px solid white;
@@ -390,7 +401,7 @@ form.location {
   width: 100%;
   background-color: white;
   box-shadow: 0px 10px 10px lightgrey;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .hebergements-bloc .hebergements-photos:hover {
   transform: scale(1.04);
@@ -402,31 +413,35 @@ form.location {
   object-fit: cover;
 }
 
-#hebergements a {
-  margin-top: 2em;
+.hebergements a {
+  margin-top: 2rem;
   text-decoration: none;
   color: black;
   font-weight: bold;
 
   display: inline-block;
 }
-#hebergements a:hover {
+.hebergements a:hover {
   transform: scale(1.05);
   text-decoration: underline;
   color: #0065fc;
 }
+.description2 p{
+  font-size:12px;
+}
+
 .description2 {
   padding-left: 10px;
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
   max-height: 150px;
-  gap: 1em;
+  gap: 1rem;
 }
 
 /*-------------------------------section1 responsive--------------------------*/
 @media (min-width: 768px) {
-  #hebergements {
+  .hebergements {
     background-color: white;
   }
 
@@ -436,8 +451,8 @@ form.location {
   .hebergements-photos img {
     height: 180px;
   }
-  #hebergements a {
-    margin-top: 2em;
+  .hebergements a {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -448,10 +463,14 @@ form.location {
     justify-content: space-between;
     width: 100%;
   }
-  #hebergements {
+  .hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
     flex-basis: 66%;
+  }
+  .hebergements h2{
+    font-weight:bold;
+    font-size:22px;
   }
   .hebergements-bloc {
     display: flex;
@@ -466,10 +485,9 @@ form.location {
     height: 125px;
     width: 100%;
   }
-  #hebergements h3 {
-    padding: 1em 2em;
-  }
-  #hebergements h3 {
+  .hebergements h3 {
+    padding: 1rem 2rem;
+    
     padding: 0;
   }
   .description {
@@ -477,17 +495,19 @@ form.location {
     padding-top: 10px;
   }
   .description2 {
-    font-size: 10px;
+    
     padding-top: 10px;
   }
 }
 
 /*========================================================section2=================================================================================*/
-#section2 {
-  padding: 1em;
+.section2 {
+  padding: 1rem;
 }
-#section2 h2 {
-  margin: 1em 0;
+.section2 h2 {
+  margin: 1rem 0;
+  font-weight:bold;
+  font-size:22px;
 }
 .activites-bloc {
   display: flex;
@@ -509,6 +529,8 @@ form.location {
 }
 .bloc-photo h4 {
   padding: 20px;
+  font-size:16px;
+  font-weight:bold;
 }
 .bloc-photo-medium img {
   height: 400px;
@@ -524,8 +546,8 @@ form.location {
   object-fit: cover;
 }
 @media (min-width: 1024px) {
-  #section2 {
-    padding: 2em;
+  .section2 {
+    padding: 2rem;
   }
   .activites-bloc {
     flex-direction: row;
@@ -561,35 +583,37 @@ form.location {
   width: 100%;
   padding-top: 10px;
   background-color: #dddd;
-  padding: 2em 1em;
+  padding: 2rem 1rem;
 }
 .pieddepage {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .pieddepage a {
-  margin-top: 1em;
+  margin-top: 1rem;
   text-decoration: none;
   color: black;
+  font-size:16px;
 }
 .pieddepage a:hover {
   font-weight: bold;
 }
 .footer-titre {
   font-weight: bold;
+  font-size:18px;
 }
 /*----------------------------------footer responsive-------------------------------------------------*/
 @media (min-width: 768px) {
   .footer {
     display: flex;
-    padding-top: 2em;
+    padding-top: 2rem;
   }
   .pieddepage {
     margin-right: auto;
-    padding: 2em;
+    padding: 2rem;
   }
   .pieddepage a {
     font-size: 14px;

@@ -6,11 +6,13 @@
 }
 
 /*=====================================================header=================================================*/
+
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top:2rem;
  
 }
 .logo {
@@ -30,7 +32,8 @@
   text-decoration: none;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  margin-right: 20px;
+  padding:2rem;
+  
 }
 .inscription:hover {
   border-bottom: 3px solid #0065fc;
@@ -52,7 +55,7 @@
  text-align:center;
   border-bottom: 3px solid lightgrey;
   border-top: 3px solid transparent;
-  padding:13px 0;
+  padding:2rem;
 }
 .sousmenu:hover {
   border-bottom: 3px solid #0065fc;
@@ -76,7 +79,7 @@
   }
   .inscription {
     display: flex;
-    padding: 2rem;
+    
   }
   .inscription:hover {
     border-bottom: 3px solid transparent;

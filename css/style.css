@@ -20,10 +20,8 @@
 }
 /*------------------------------responsive--------------------------------*/
 @media (min-width: 1024px) {
-  .logo {
-    padding: 0 16px;
-    margin-left: 5px;
-  }
+  
+  
 }
 /*----------------------------------------------inscription------------------------------------*/
 .inscription {
@@ -185,7 +183,7 @@ form.location {
 
   flex-wrap: wrap;
 }
-.options-h1 {
+.options-h2 {
   font-size: 18px;
   display: flex;
   font-weight:bold;
@@ -197,7 +195,7 @@ form.location {
   font-size:18px;
 }
 .filtres-menu:hover {
-  text-decoration: bold;
+  transform: scale(1.05);
 }
 .listefiltres {
   display: flex;
@@ -256,7 +254,7 @@ form.location {
     flex-direction: row;
   }
 
-  .options-h1 {
+  .options-h2 {
     display: flex;
     align-items: center;
   }
@@ -276,7 +274,7 @@ form.location {
   .sousoptions {
     flex-wrap: nowrap;
   }
-  .options-h1 {
+  .options-h2 {
     margin-top: 15px;
   }
   .filtres {
@@ -348,6 +346,10 @@ form.location {
   font-size:14px;
   font-weight:normal;
 }
+.populaires-photos{
+  text-decoration: none;
+  color: black;
+}
 .etoile {
   padding-top: 1rem;
   position: absolute;
@@ -384,7 +386,7 @@ form.location {
 
 .hebergements {
   background-color: white;
-  padding: 1rem;
+  padding: 0.81rem;
 }
 
 .hebergements-bloc {
@@ -394,6 +396,7 @@ form.location {
   align-items: center;
   border-radius: 15px;
   padding-top: 1rem;
+  
 }
 .hebergements-photos {
   border: 5px solid white;
@@ -405,18 +408,23 @@ form.location {
   background-color: white;
   box-shadow: 0px 10px 10px lightgrey;
   margin-top: 2rem;
+  text-decoration: none;
+  color: black;
+ 
 }
 .hebergements-bloc .hebergements-photos:hover {
   transform: scale(1.04);
+  
 }
 
 .hebergements-photos img {
+  width:100%;
   height: 120px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
 
-.hebergements a {
+.hebergements-plus {
   margin-top: 2rem;
   text-decoration: none;
   color: black;
@@ -424,7 +432,7 @@ form.location {
 
   display: inline-block;
 }
-.hebergements a:hover {
+.hebergements-plus:hover {
   transform: scale(1.05);
   text-decoration: underline;
   color: #0065fc;
@@ -439,7 +447,7 @@ form.location {
   flex-direction: column;
   flex-basis: 50%;
   max-height: 150px;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 /*-------------------------------section1 responsive--------------------------*/
@@ -454,9 +462,7 @@ form.location {
   .hebergements-photos img {
     height: 180px;
   }
-  .hebergements a {
-    margin-top: 2rem;
-  }
+  
 }
 @media (min-width: 1024px) {
   .section1 {
@@ -526,6 +532,8 @@ form.location {
   background-color: white;
   box-shadow: 0 7px 10px lightgrey;
   margin-top: 20px;
+  text-decoration: none;
+  color: black;
 }
 .bloc-photo:hover {
   transform: scale(1.04);
@@ -555,12 +563,13 @@ form.location {
   .activites-bloc {
     flex-direction: row;
     justify-content: space-between;
+    gap:2.6rem;
   }
 
   .colonne {
     display: flex;
     height: 500px;
-    width: 220px;
+   width:24%;
   }
   .colonne img {
     max-width: 100%;
@@ -569,6 +578,8 @@ form.location {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width:100%;
+    
   }
 
   .bloc-photo-medium img {

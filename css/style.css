@@ -12,17 +12,11 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top:2rem;
- 
 }
 .logo {
   margin-left: 20px;
 }
-/*------------------------------responsive--------------------------------*/
-@media (min-width: 1024px) {
-  
-  
-}
+
 /*----------------------------------------------inscription------------------------------------*/
 .inscription {
   font-weight: bold;
@@ -30,8 +24,7 @@
   text-decoration: none;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  padding:2rem;
-  
+  padding: 2rem;
 }
 .inscription:hover {
   border-bottom: 3px solid #0065fc;
@@ -50,10 +43,10 @@
   text-decoration: none;
   color: black;
   display: block;
- text-align:center;
+  text-align: center;
   border-bottom: 3px solid lightgrey;
   border-top: 3px solid transparent;
-  padding:2rem;
+  padding: 2rem;
 }
 .sousmenu:hover {
   border-bottom: 3px solid #0065fc;
@@ -77,7 +70,6 @@
   }
   .inscription {
     display: flex;
-    
   }
   .inscription:hover {
     border-bottom: 3px solid transparent;
@@ -106,8 +98,8 @@
   padding-top: 1rem;
 }
 .presentation-h1 {
-  font-weight:bold;
-  font-size:22px;
+  font-weight: bold;
+  font-size: 22px;
   margin-top: 1rem;
 }
 
@@ -186,13 +178,13 @@ form.location {
 .options-h2 {
   font-size: 18px;
   display: flex;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .filtres-menu {
   font-weight: bold;
   padding: 20px;
-  font-size:18px;
+  font-size: 18px;
 }
 .filtres-menu:hover {
   transform: scale(1.05);
@@ -297,9 +289,9 @@ form.location {
   justify-content: space-between;
   align-items: center;
 }
-.populaires-titre p{
-  font-size:22px;
-  font-weight:bold;
+.populaires-titre p {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .fas.fa-chart-line {
@@ -337,16 +329,16 @@ form.location {
   max-height: 150px;
   position: relative;
 }
-.description h3{
-  font-size:16px;
-  font-weight:bold;
+.description h3 {
+  font-size: 16px;
+  font-weight: bold;
 }
 .description p {
   margin-top: 5px;
-  font-size:14px;
-  font-weight:normal;
+  font-size: 14px;
+  font-weight: normal;
 }
-.populaires-photos{
+.populaires-photos {
   text-decoration: none;
   color: black;
 }
@@ -396,7 +388,6 @@ form.location {
   align-items: center;
   border-radius: 15px;
   padding-top: 1rem;
-  
 }
 .hebergements-photos {
   border: 5px solid white;
@@ -410,15 +401,13 @@ form.location {
   margin-top: 2rem;
   text-decoration: none;
   color: black;
- 
 }
 .hebergements-bloc .hebergements-photos:hover {
   transform: scale(1.04);
-  
 }
 
 .hebergements-photos img {
-  width:100%;
+  width: 100%;
   height: 120px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -437,8 +426,8 @@ form.location {
   text-decoration: underline;
   color: #0065fc;
 }
-.description2 p{
-  font-size:12px;
+.description2 p {
+  font-size: 12px;
 }
 
 .description2 {
@@ -462,7 +451,6 @@ form.location {
   .hebergements-photos img {
     height: 180px;
   }
-  
 }
 @media (min-width: 1024px) {
   .section1 {
@@ -477,9 +465,9 @@ form.location {
     border-radius: 20px;
     flex-basis: 66%;
   }
-  .hebergements h2{
-    font-weight:bold;
-    font-size:22px;
+  .hebergements h2 {
+    font-weight: bold;
+    font-size: 22px;
   }
   .hebergements-bloc {
     display: flex;
@@ -496,7 +484,7 @@ form.location {
   }
   .hebergements h3 {
     padding: 1rem 2rem;
-    
+
     padding: 0;
   }
   .description {
@@ -504,7 +492,6 @@ form.location {
     padding-top: 10px;
   }
   .description2 {
-    
     padding-top: 10px;
   }
 }
@@ -515,8 +502,8 @@ form.location {
 }
 .section2 h2 {
   margin: 1rem 0;
-  font-weight:bold;
-  font-size:22px;
+  font-weight: bold;
+  font-size: 22px;
 }
 .activites-bloc {
   display: flex;
@@ -538,10 +525,10 @@ form.location {
 .bloc-photo:hover {
   transform: scale(1.04);
 }
-.bloc-photo h4 {
+.bloc-photo h3 {
   padding: 20px;
-  font-size:16px;
-  font-weight:bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 .bloc-photo-medium img {
   height: 400px;
@@ -563,13 +550,13 @@ form.location {
   .activites-bloc {
     flex-direction: row;
     justify-content: space-between;
-    gap:2.6rem;
+    gap: 2.6rem;
   }
 
   .colonne {
     display: flex;
     height: 500px;
-   width:24%;
+    width: 24%;
   }
   .colonne img {
     max-width: 100%;
@@ -578,8 +565,7 @@ form.location {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:100%;
-    
+    width: 100%;
   }
 
   .bloc-photo-medium img {
@@ -610,14 +596,14 @@ form.location {
   margin-top: 1rem;
   text-decoration: none;
   color: black;
-  font-size:16px;
+  font-size: 16px;
 }
 .pieddepage a:hover {
   font-weight: bold;
 }
 .footer-titre {
   font-weight: bold;
-  font-size:18px;
+  font-size: 18px;
 }
 /*----------------------------------footer responsive-------------------------------------------------*/
 @media (min-width: 768px) {

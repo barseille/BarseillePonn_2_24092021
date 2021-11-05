@@ -377,7 +377,7 @@ form.location {
 }
 /*-------------------------------hebergements------------------------------------------------*/
 
-.hebergements {
+#hebergements {
   background-color: white;
   padding: 0.81rem;
 }
@@ -442,7 +442,7 @@ form.location {
 
 /*-------------------------------section1 responsive--------------------------*/
 @media (min-width: 768px) {
-  .hebergements {
+  #hebergements {
     background-color: white;
   }
 
@@ -461,13 +461,13 @@ form.location {
     justify-content: space-between;
     width: 100%;
   }
-  .hebergements {
+  #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
     flex-basis: 66%;
     padding: 2rem;
   }
-  .hebergements h2 {
+  #hebergements h2 {
     font-weight: bold;
     font-size: 22px;
   }
@@ -484,7 +484,7 @@ form.location {
     height: 125px;
     width: 100%;
   }
-  .hebergements h3 {
+  #hebergements h3 {
     padding: 1rem 2rem;
 
     padding: 0;
@@ -499,10 +499,10 @@ form.location {
 }
 
 /*========================================================section2=================================================================================*/
-.section2 {
+#section2 {
   padding: 1rem;
 }
-.section2 h2 {
+#section2 h2 {
   margin: 1rem 0;
   font-weight: bold;
   font-size: 22px;
@@ -552,7 +552,7 @@ form.location {
   margin-top: 20px;
 }
 @media (min-width: 1024px) {
-  .section2 {
+  #section2 {
     padding: 2rem;
   }
   .activites-bloc {

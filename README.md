@@ -6,7 +6,7 @@
 
 ## Documentation
 
-[Ce site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix](https://linktodocumentation)
+Ce site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix
 
 
 ## 🛠 Skills
